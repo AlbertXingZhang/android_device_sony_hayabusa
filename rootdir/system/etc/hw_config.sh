@@ -1,7 +1,7 @@
 # Audio jack configuration
 dev=/sys/devices/platform/msm_ssbi.0/pm8921-core/simple_remote_pf/simple_remote
 echo 0,301 > $dev/accessory_min_vals
-echo 300,1599 > $dev/accessory_max_vals
+echo 300,1900 > $dev/accessory_max_vals
 echo 0,100,280,500 > $dev/button_min_vals
 echo 99,199,399,699 > $dev/button_max_vals
 echo 512 > $dev/btn_trig_period_freq  # Button Period Freq(Hz)
