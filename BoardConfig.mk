@@ -26,6 +26,15 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
+# Dex
+ifeq ($(HOST_OS),linux)
+  ifeq ($(TARGET_BUILD_VARIANT),user)
+    ifeq ($(WITH_DEXPREOPT),)
+      WITH_DEXPREOPT := true
+    endif
+  endif
+endif
+
 TARGET_OTA_ASSERT_DEVICE := lt29i,hayabusa,LT29i
 
 BOARD_HARDWARE_CLASS := device/sony/hayabusa/cmhw
