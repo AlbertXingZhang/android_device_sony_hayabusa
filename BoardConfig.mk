@@ -35,6 +35,13 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
+# Healthd
+BACKLIGHT_PATH := /sys/class/leds/lcd-backlight_1/brightness
+SECONDARY_BACKLIGHT_PATH := /sys/class/leds/lcd-backlight_2/brightness
+RED_LED_PATH := /sys/class/leds/pwr-red/brightness
+GREEN_LED_PATH := /sys/class/leds/pwr-green/brightness
+BLUE_LED_PATH := /sys/class/leds/pwr-blue/brightness
+
 TARGET_OTA_ASSERT_DEVICE := lt29i,hayabusa,LT29i
 
 BOARD_HARDWARE_CLASS := device/sony/hayabusa/cmhw
@@ -46,6 +53,7 @@ BOARD_SEPOLICY_DIRS += \
 BOARD_SEPOLICY_UNION += \
     file_contexts \
     file.te \
+    healthd.te \
     system_server.te
 
 # inherit from the proprietary version

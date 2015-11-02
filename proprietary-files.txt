@@ -352,7 +352,6 @@ etc/firmware/wcnss.mdt
 
 # Misc - possibly to remove
 bin/cal_data_manager
-bin/chargemon
 bin/cnd
 bin/fast-dormancy
 bin/clearpad_fwloader
