@@ -21,11 +21,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/hayabusa/bluetooth
 
 TARGET_LS_USE_ALS_NODE := true
 
-# Recovery
-BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_USERIMAGES_USE_F2FS := true
-
 # Dex
 ifeq ($(HOST_OS),linux)
   ifeq ($(TARGET_BUILD_VARIANT),user)
@@ -34,13 +29,6 @@ ifeq ($(HOST_OS),linux)
     endif
   endif
 endif
-
-# Healthd
-BACKLIGHT_PATH := /sys/class/leds/lcd-backlight_1/brightness
-SECONDARY_BACKLIGHT_PATH := /sys/class/leds/lcd-backlight_2/brightness
-RED_LED_PATH := /sys/class/leds/pwr-red/brightness
-GREEN_LED_PATH := /sys/class/leds/pwr-green/brightness
-BLUE_LED_PATH := /sys/class/leds/pwr-blue/brightness
 
 TARGET_OTA_ASSERT_DEVICE := lt29i,hayabusa,LT29i
 
