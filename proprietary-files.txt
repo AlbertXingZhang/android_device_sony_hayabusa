@@ -355,7 +355,6 @@ bin/cal_data_manager
 bin/cnd
 bin/fast-dormancy
 bin/clearpad_fwloader
-bin/thermald
 etc/fast-dormancy/fd_custm_conf.txt
 etc/fast-dormancy/fd_ext_conf.txt
 etc/fast-dormancy/fd_int_conf.txt

@@ -37,8 +37,7 @@ PRODUCT_COPY_FILES += \
 
 #sensors
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/system/etc/sensors.conf:system/etc/sensors.conf \
-    $(LOCAL_PATH)/rootdir/system/etc/sysmon.cfg:system/etc/sysmon.cfg
+    $(LOCAL_PATH)/rootdir/system/etc/sensors.conf:system/etc/sensors.conf
 
 # touchscreen and simple remote platform
 PRODUCT_COPY_FILES += \
